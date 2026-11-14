@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>李晋 · 个人博客</title>
+    <link>https://fsloper-lijin.github.io/</link>
+    <description>记录技术、阅读与思考。</description>
+    <language>zh-CN</language>
+    <lastBuildDate>Sun, 10 Nov 2026 09:00:00 +0800</lastBuildDate>
+    <atom:link href="https://fsloper-lijin.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+
+    <item>
+      <title>写在开头：为什么还要有一个自己的角落</title>
+      <link>https://fsloper-lijin.github.io/posts/2026-11-10-hello.html</link>
+      <guid>https://fsloper-lijin.github.io/posts/2026-11-10-hello.html</guid>
+      <pubDate>Mon, 10 Nov 2026 09:00:00 +0800</pubDate>
+      <description>平台会倒，算法会变，但一个静态页面上的一句话可以活十年。这是我重新开始写博客的理由。</description>
+    </item>
+
+    <item>
+      <title>把博客搬回纯静态：一次极简主义的实践</title>
+      <link>https://fsloper-lijin.github.io/posts/2026-10-28-static-site.html</link>
+      <guid>https://fsloper-lijin.github.io/posts/2026-10-28-static-site.html</guid>
+      <pubDate>Wed, 28 Oct 2026 09:00:00 +0800</pubDate>
+      <description>零构建、零依赖、零服务器成本。手写 HTML 并没有想象中那么难以维护。</description>
+    </item>
+
+    <item>
+      <title>关于专注：注意力是唯一不可再生的资产</title>
+      <link>https://fsloper-lijin.github.io/posts/2026-10-15-focus.html</link>
+      <guid>https://fsloper-lijin.github.io/posts/2026-10-15-focus.html</guid>
+      <pubDate>Thu, 15 Oct 2026 09:00:00 +0800</pubDate>
+      <description>时间可以被规划，注意力却只能被消耗。过去一年我做的所有效率改进，本质上都在保护同一件事。</description>
+    </item>
+
+  </channel>
+</rss>

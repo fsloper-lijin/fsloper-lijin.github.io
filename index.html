@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>李晋 · 个人主页与博客</title>
+<meta name="description" content="李晋 的个人主页与博客 — 记录技术、阅读与思考。">
+<meta name="author" content="李晋">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="李晋 · 个人主页与博客">
+<meta property="og:description" content="记录技术、阅读与思考。">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✳</text></svg>">
+<link rel="stylesheet" href="assets/css/style.css">
+
+<!-- 防闪烁：在样式绘制前确定主题 -->
+<script>
+(function () {
+  try {
+    var t = localStorage.getItem('blog-theme');
+    if (!t) {
+      t = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        ? 'dark' : 'light';
+    }
+    document.documentElement.setAttribute('data-theme', t);
+  } catch (e) {}
+})();
+</script>
+</head>
+<body>
+
+<!-- ========== 导航 ========== -->
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="nav__brand">
+      <span class="nav__dot"></span>
+      李晋
+    </a>
+    <div class="nav__links">
+      <a href="index.html" class="nav__link is-active">首页</a>
+      <a href="index.html#posts" class="nav__link">文章</a>
+      <a href="#projects" class="nav__link">项目</a>
+      <a href="about.html" class="nav__link">关于</a>
+      <button class="theme-toggle" type="button" aria-label="切换主题">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="4.5"/>
+          <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>
+        </svg>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <!-- ========== Hero ========== -->
+  <section class="hero">
+    <div class="wrap">
+      <p class="hero__eyebrow">Hey, I'm</p>
+      <h1 class="hero__title">李晋 <em>/ fsloper</em></h1>
+      <p class="hero__lede">
+        一名<strong>全栈工程师</strong>。<strong>fsloper</strong> 是我给自己造的词，
+        取自 <em>full Stack Developer</em>——因为「全栈」说多了像套话，
+        一个拼错的词反倒让人记得住。
+        这里存放我的技术笔记、踩坑记录，以及那些没地方放的碎念。
+      </p>
+      <div class="hero__actions">
+        <a href="#posts" class="btn btn--primary">
+          读点东西
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M13 6l6 6-6 6"/>
+          </svg>
+        </a>
+        <a href="about.html" class="btn btn--ghost">关于我</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 文章列表 ========== -->
+  <section class="section" id="posts">
+    <div class="wrap">
+      <div class="section__head reveal">
+        <h2 class="section__title">最近写的</h2>
+        <a href="posts/2026-11-10-hello.html" class="section__more">全部文章 →</a>
+      </div>
+
+      <ul class="post-list">
+        <li class="post-item reveal">
+          <a href="posts/2026-11-10-hello.html" class="post-link">
+            <span class="post-link__date">2026 / 11 / 10</span>
+            <div>
+              <h3 class="post-link__title">写在开头：为什么还要有一个自己的角落</h3>
+              <p class="post-link__excerpt">
+                平台会倒，算法会变，但一个静态页面上的一句话可以活十年。这是我重新开始写博客的理由。
+              </p>
+              <div class="post-link__meta">
+                <span class="tag">随笔</span>
+                <span class="tag">写作</span>
+              </div>
+            </div>
+            <span class="post-link__arrow">→</span>
+          </a>
+        </li>
+
+        <li class="post-item reveal">
+          <a href="posts/2026-10-28-static-site.html" class="post-link">
+            <span class="post-link__date">2026 / 10 / 28</span>
+            <div>
+              <h3 class="post-link__title">把博客搬回纯静态：一次极简主义的实践</h3>
+              <p class="post-link__excerpt">
+                零构建、零依赖、零服务器成本。手写 HTML 并没有想象中那么难以维护——只要你把结构定对。
+              </p>
+              <div class="post-link__meta">
+                <span class="tag">技术</span>
+                <span class="tag">GitHub Pages</span>
+              </div>
+            </div>
+            <span class="post-link__arrow">→</span>
+          </a>
+        </li>
+
+        <li class="post-item reveal">
+          <a href="posts/2026-10-15-focus.html" class="post-link">
+            <span class="post-link__date">2026 / 10 / 15</span>
+            <div>
+              <h3 class="post-link__title">关于专注：注意力是唯一不可再生的资产</h3>
+              <p class="post-link__excerpt">
+                时间可以被规划，注意力却只能被消耗。过去一年我做的所有效率改进，本质上都在保护同一件事。
+              </p>
+              <div class="post-link__meta">
+                <span class="tag">思考</span>
+                <span class="tag">效率</span>
+              </div>
+            </div>
+            <span class="post-link__arrow">→</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ========== 关于 ========== -->
+  <section class="section" id="about">
+    <div class="wrap">
+      <div class="section__head reveal">
+        <h2 class="section__title">关于我</h2>
+        <a href="about.html" class="section__more">完整介绍 →</a>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            全栈对我来说不是「什么都会一点」，而是<strong>能独自把一个产品从想法推到线上</strong>：
+            从界面、接口、数据模型，到部署和监控。
+          </p>
+          <p>
+            我喜欢这件事里那种没被切割的连续性——改一行文案时，知道它会怎么流过缓存、
+            落到哪张表、最后在哪个面板上被人看见。
+          </p>
+          <p>
+            这个站是我自己手写出来的，没有框架。算是一种提醒：
+            <strong>工具可以换，基本功不能省。</strong>
+          </p>
+        </div>
+
+        <ul class="skill-list reveal">
+          <li><span>TypeScript / JavaScript</span><span>主力</span></li>
+          <li><span>React / Vue</span><span>前端</span></li>
+          <li><span>Node.js / Python</span><span>服务端</span></li>
+          <li><span>PostgreSQL / Redis</span><span>数据层</span></li>
+          <li><span>Docker / Linux</span><span>部署运维</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 项目 ========== -->
+  <section class="section" id="projects">
+    <div class="wrap wrap--wide">
+      <div class="section__head reveal">
+        <h2 class="section__title">做过的东西</h2>
+        <a href="https://github.com/FSloper?tab=repositories" class="section__more" target="_blank" rel="noopener">GitHub →</a>
+      </div>
+
+      <div class="card-grid">
+        <a class="card reveal" href="https://github.com/FSloper/Xiaomi-Band-Support-List" target="_blank" rel="noopener">
+          <h3 class="card__title">Xiaomi-Band-Support-List</h3>
+          <p class="card__desc">
+            小米与红米手机的网络频段支持对照表，按机型整理。买机器或出门前先查一眼。
+          </p>
+          <span class="card__lang"><i class="lang-dot" style="background:#e34c26"></i>HTML · 2025</span>
+        </a>
+
+        <a class="card reveal" href="https://github.com/FSloper/xiaomi_router_api_document-tool" target="_blank" rel="noopener">
+          <h3 class="card__title">xiaomi_router_api_document-tool</h3>
+          <p class="card__desc">
+            把小米路由器私有接口的调用方式、参数与返回值整理成可查的文档，省去反复抓包。
+          </p>
+          <span class="card__lang"><i class="lang-dot" style="background:#3572A5"></i>Python · ★ 2</span>
+        </a>
+
+        <a class="card reveal" href="https://github.com/FSloper/litiaotiao_package_backup" target="_blank" rel="noopener">
+          <h3 class="card__title">litiaotiao_package_backup</h3>
+          <p class="card__desc">
+            李跳跳各历史版本 APK 的备份存档，需要回退到某个版本时可以直接取用。
+          </p>
+          <span class="card__lang"><i class="lang-dot" style="background:#e34c26"></i>HTML</span>
+        </a>
+
+        <a class="card reveal" href="https://github.com/FSloper/lottery_data" target="_blank" rel="noopener">
+          <h3 class="card__title">lottery_data</h3>
+          <p class="card__desc">
+            彩票开奖数据的采集与结构化整理，用于观察历史分布。
+          </p>
+          <span class="card__lang"><i class="lang-dot" style="background:#f1e05a"></i>JavaScript</span>
+        </a>
+
+        <a class="card card--wide reveal" href="https://github.com/FSloper?tab=repositories" target="_blank" rel="noopener">
+          <h3 class="card__title">还有 8 个仓库 <span class="card__star">→</span></h3>
+          <p class="card__desc">
+            早期项目、练习与实验都在这里。这些仓库目前挂在旧账号 <code>FSloper</code> 下，
+            待迁移到 <code>fsloper-lijin</code>。
+          </p>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ========== 页脚 ========== -->
+<footer class="site-footer">
+  <div class="wrap wrap--wide">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="nav__brand">
+          <span class="nav__dot"></span>
+          李晋
+        </a>
+        <p>记录技术、阅读与思考。更新频率随缘，质量随心情。</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/fsloper-lijin" target="_blank" rel="noopener">GitHub</a>
+        <a href="feed.xml" type="application/rss+xml">RSS</a>
+        <a href="about.html">关于</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> 李晋</span>
+      <span>Powered by plain HTML · Hosted on GitHub Pages</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

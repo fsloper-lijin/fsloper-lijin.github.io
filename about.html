@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>关于 · 李晋</title>
+<meta name="description" content="李晋（fsloper），全栈工程师。fsloper 取自 full Stack Developer。">
+<meta name="author" content="李晋">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✳</text></svg>">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>
+(function () {
+  try {
+    var t = localStorage.getItem('blog-theme');
+    if (!t) t = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    document.documentElement.setAttribute('data-theme', t);
+  } catch (e) {}
+})();
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="nav__brand">
+      <span class="nav__dot"></span>
+      李晋
+    </a>
+    <div class="nav__links">
+      <a href="index.html" class="nav__link">首页</a>
+      <a href="index.html#posts" class="nav__link">文章</a>
+      <a href="index.html#projects" class="nav__link">项目</a>
+      <a href="about.html" class="nav__link is-active">关于</a>
+      <button class="theme-toggle" type="button" aria-label="切换主题">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="4.5"/>
+          <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>
+        </svg>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" style="padding-bottom:40px;">
+    <div class="wrap">
+      <p class="hero__eyebrow">About</p>
+      <h1 class="hero__title">李晋 <em>/ fsloper</em></h1>
+      <p class="hero__lede">
+        全栈工程师。<strong>fsloper</strong> 是我给自己造的写法——
+        取自 <em>full Stack Developer</em>，两个词掐头去尾，刚好剩下一个能当 ID 的词。
+      </p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0;">
+    <div class="wrap">
+      <div class="prose">
+        <h2>现在</h2>
+        <p>
+          日常在「一个人把产品做完」的尺度上工作：从界面、接口、数据模型，
+          一直到部署和监控。喜欢这件事里那种没被切割的连续性——
+          改一行文案时，知道它会怎么流过缓存、落到哪张表、最后在哪个面板上被人看见。
+        </p>
+        <p>
+          <strong>fsloper</strong> 这个词是当初起 ID 时捏出来的。全栈两个字说多了像套话，
+          而 <em>full Stack Developer</em> 掐掉后半截压成一个词，反倒成了别人会问「这是什么意思」的名字。
+          能被追问的名字，是个好名字。
+        </p>
+
+        <h2>能做的事</h2>
+
+        <table>
+          <thead>
+            <tr><th>层面</th><th>具体</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>前端</td>
+              <td>TypeScript / JavaScript，React 与 Vue；原生 HTML/CSS 也手写——这个站就是</td>
+            </tr>
+            <tr>
+              <td>服务端</td>
+              <td>Node.js、Python；接口设计、数据采集、任务调度</td>
+            </tr>
+            <tr>
+              <td>数据</td>
+              <td>PostgreSQL、Redis；表结构设计与查询优化</td>
+            </tr>
+            <tr>
+              <td>部署</td>
+              <td>Linux、Docker、Nginx、CI/CD；静态站托管同样熟悉</td>
+            </tr>
+            <tr>
+              <td>顺手活</td>
+              <td>安卓侧的小工具、抓包与接口整理、硬件参数的对照</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>做过的仓库</h2>
+
+        <ul>
+          <li>
+            <a href="https://github.com/FSloper/Xiaomi-Band-Support-List" target="_blank" rel="noopener">Xiaomi-Band-Support-List</a>
+            —— 小米与红米手机的网络频段支持对照表，按机型整理。
+          </li>
+          <li>
+            <a href="https://github.com/FSloper/xiaomi_router_api_document-tool" target="_blank" rel="noopener">xiaomi_router_api_document-tool</a>
+            —— 把小米路由器私有接口的参数与返回值整理成可查的文档。
+          </li>
+          <li>
+            <a href="https://github.com/FSloper/litiaotiao_package_backup" target="_blank" rel="noopener">litiaotiao_package_backup</a>
+            —— 李跳跳各历史版本 APK 的备份存档。
+          </li>
+          <li>
+            <a href="https://github.com/FSloper/lottery_data" target="_blank" rel="noopener">lottery_data</a>
+            —— 彩票开奖数据的采集与结构化整理。
+          </li>
+          <li>
+            <a href="https://github.com/FSloper?tab=repositories" target="_blank" rel="noopener">全部 12 个仓库 →</a>
+          </li>
+        </ul>
+
+        <h2>关于两个账号</h2>
+
+        <p>
+          我 2020 年注册的账号
+          <a href="https://github.com/FSloper" target="_blank" rel="noopener">FSloper</a>
+          现在登不上去了，所以现在用的是
+          <a href="https://github.com/fsloper-lijin" target="_blank" rel="noopener">fsloper-lijin</a>。
+        </p>
+
+        <p>
+          上面那些仓库链接仍然指向旧账号——内容还能看，但我改不动了。迁移会陆续做，
+          做完之后链接会统一换过来。
+          <strong>这算是给自己留下的一个教训：账号归属也会过期，重要的东西得放在能拿回来的地方。</strong>
+        </p>
+
+        <h2>这个站点</h2>
+
+        <p>
+          纯 HTML + CSS + 原生 JS，零构建、零依赖，托管在 GitHub Pages 上。
+          全站只有一个 CSS 文件和一个 JS 文件，加起来不到 40KB。
+        </p>
+        <p>
+          为什么这么折腾？详见<a href="posts/2026-10-28-static-site.html">这篇文章</a>。
+        </p>
+      </div>
+
+      <div style="margin-top:52px;padding-top:28px;border-top:1px solid var(--border);display:flex;gap:12px;flex-wrap:wrap;">
+        <a href="https://github.com/fsloper-lijin" target="_blank" rel="noopener" class="btn btn--primary">GitHub 新账号</a>
+        <a href="https://github.com/FSloper?tab=repositories" target="_blank" rel="noopener" class="btn btn--ghost">旧账号仓库</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap wrap--wide">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="nav__brand">
+          <span class="nav__dot"></span>
+          李晋
+        </a>
+        <p>记录技术、阅读与思考。更新频率随缘，质量随心情。</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/fsloper-lijin" target="_blank" rel="noopener">GitHub</a>
+        <a href="feed.xml" type="application/rss+xml">RSS</a>
+        <a href="index.html">首页</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> 李晋</span>
+      <span>Powered by plain HTML · Hosted on GitHub Pages</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
