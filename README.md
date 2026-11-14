@@ -30,15 +30,13 @@ python -m http.server 8000
 | RSS 域名 | `https://fsloper-lijin.github.io` |
 | `.nojekyll` | 已放置 |
 | 明暗主题、响应式、阅读进度、滚动动画 | 已内置 |
+| 联系邮箱 | `2310984793@qq.com`（页脚与关于页） |
 
 ### 还需要你补的
 
-1. **联系邮箱**——你还没提供，所以全站暂时没有邮件入口。给我地址，或自己替换这几处：
-   在 `index.html` 与 `about.html` 的 `.footer-links` 里加回一行
-   `<a href="mailto:你的邮箱">Email</a>`。
-2. **文章正文**——`posts/` 下三篇是示例文章（内容完整，但写的是别人）。
+1. **文章正文**——`posts/` 下三篇是示例文章（内容完整，但写的是别人）。
    留一篇当模板，其余替换成你自己的。
-3. **旧仓库迁移**——项目卡片现在指向 `https://github.com/FSloper/...`。
+2. **旧仓库迁移**——项目卡片现在指向 `https://github.com/FSloper/...`。
    等你用新账号 fork 或重建后，把 `index.html` 与 `about.html` 里的
    `FSloper` 批量替换成 `fsloper-lijin` 即可：
 
