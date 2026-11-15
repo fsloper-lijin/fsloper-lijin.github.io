@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>项目 · 李晋</title>
+<meta name="description" content="李晋的公开仓库：直播间值守工具、彩票数据平台、小米设备资料整理、系统工具与学习归档。">
+<meta name="author" content="李晋">
+<meta property="og:type" content="website">
+<meta property="og:title" content="项目 · 李晋">
+<meta property="og:description" content="10 个公开仓库，按性质分成四组。">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✳</text></svg>">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>
+(function () {
+  try {
+    var t = localStorage.getItem('blog-theme');
+    if (!t) t = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    document.documentElement.setAttribute('data-theme', t);
+  } catch (e) {}
+})();
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="nav__brand">
+      <span class="nav__dot"></span>
+      李晋
+    </a>
+    <div class="nav__links">
+      <a href="index.html" class="nav__link">首页</a>
+      <a href="index.html#posts" class="nav__link">文章</a>
+      <a href="projects.html" class="nav__link is-active">项目</a>
+      <a href="about.html" class="nav__link">关于</a>
+      <button class="theme-toggle" type="button" aria-label="切换主题">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="4.5"/>
+          <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>
+        </svg>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" style="padding-bottom:36px;">
+    <div class="wrap">
+      <p class="hero__eyebrow">Projects</p>
+      <h1 class="hero__title">做过的东西</h1>
+      <p class="hero__lede">
+        10 个公开仓库，按<strong>性质</strong>分成四组，不是按星标数。
+        能跑的工具、能用的页面、整理过的资料、以及纯粹为了练手写的代码，各归各位。
+      </p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0;">
+    <div class="wrap wrap--wide">
+
+      <!-- 组一：工程与工具 -->
+      <div class="proj-group reveal">
+        <div class="proj-group__head">
+          <h2 class="proj-group__title">工程与工具</h2>
+          <span class="proj-group__count">2 个</span>
+        </div>
+        <p class="proj-group__note">有完整实现、能直接运行的项目。</p>
+
+        <div class="card-grid">
+          <a class="card reveal" href="https://github.com/fsloper-lijin/douyin-live-attendant" target="_blank" rel="noopener">
+            <h3 class="card__title">douyin-live-attendant</h3>
+            <p class="card__desc">
+              直播间值守工具。Selenium 驱动自动巡房、加粉丝团、点亮灯牌、挂机计时，
+              用 SQLite 记录每日进度，Tkinter 做操作界面。四种运行模式，调度上做了「雨露均沾」的排序，避免只照顾前几个主播。
+            </p>
+            <div class="card__foot">
+              <span class="card__foot-left"><i class="lang-dot" style="background:#3572A5"></i>Python · 190 KB</span>
+              <span class="card__year">2026</span>
+            </div>
+          </a>
+
+          <a class="card reveal" href="https://github.com/fsloper-lijin/windowsultra" target="_blank" rel="noopener">
+            <h3 class="card__title">windowsultra</h3>
+            <p class="card__desc">
+              轻量级 Windows 优化工具的尝试，C 语言实现。目标是对标 Dism++ 的系统优化部分，
+              做了界面与注册表修改的逻辑。停留在早期原型，开发笔记比代码本身更完整。
+            </p>
+            <div class="card__foot">
+              <span class="card__foot-left"><i class="lang-dot" style="background:#555"></i>C · 9 KB</span>
+              <span class="card__year">2022</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- 组二：Web 应用 -->
+      <div class="proj-group reveal">
+        <div class="proj-group__head">
+          <h2 class="proj-group__title">Web 应用与页面</h2>
+          <span class="proj-group__count">2 个</span>
+        </div>
+        <p class="proj-group__note">纯前端，无后端依赖，打开就能用。</p>
+
+        <div class="card-grid">
+          <a class="card reveal" href="https://github.com/fsloper-lijin/lottery_data" target="_blank" rel="noopener">
+            <h3 class="card__title">lottery_data</h3>
+            <p class="card__desc">
+              中国彩票信息公开平台。双色球、快乐8、福彩3D 的开奖结果查询、走势图分析与中奖核对，
+              数据以静态文件内嵌，纯 JavaScript 实现，不需要任何服务端。
+            </p>
+            <div class="card__foot">
+              <span class="card__foot-left"><i class="lang-dot" style="background:#f1e05a"></i>JavaScript · 106 KB</span>
+              <span class="card__year">2025</span>
+            </div>
+          </a>
+
+          <a class="card reveal" href="https://github.com/fsloper-lijin/Xiaomi-Band-Support-List" target="_blank" rel="noopener">
+            <h3 class="card__title">Xiaomi-Band-Support-List</h3>
+            <p class="card__desc">
+              小米与红米手机的网络频段支持对照表。机型数据整理成 JSON，配一个可查阅的静态页面——
+              买机器或出门前先确认一下频段，比翻参数页快。
+            </p>
+            <div class="card__foot">
+              <span class="card__foot-left"><i class="lang-dot" style="background:#e34c26"></i>HTML · 10 KB</span>
+              <span class="card__year">2025</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- 组三：文档与重构 -->
+      <div class="proj-group reveal">
+        <div class="proj-group__head">
+          <h2 class="proj-group__title">文档与重构</h2>
+          <span class="proj-group__count">1 个</span>
+        </div>
+        <p class="proj-group__note">主体是整理别人的东西，自己补上能跑的部分。</p>
+
+        <div class="card-grid">
+          <a class="card reveal" href="https://github.com/fsloper-lijin/xiaomi_router_api_document-tool" target="_blank" rel="noopener">
+            <h3 class="card__title">xiaomi_router_api_document-tool</h3>
+            <p class="card__desc">
+              小米路由器私有接口的文档整理，以及用 Python 重写的调用实现。
+              文档部分继承自上游作者的成果，Python 脚本是自己补的——上游停更之后，把能跑通的调用方式固化成代码。
+            </p>
+            <div class="card__foot">
+              <span class="card__foot-left"><i class="lang-dot" style="background:#3572A5"></i>Python · 40 KB</span>
+              <span class="card__year">2025</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- 组四：学习与归档 -->
+      <div class="proj-group reveal">
+        <div class="proj-group__head">
+          <h2 class="proj-group__title">学习与归档</h2>
+          <span class="proj-group__count">5 个</span>
+        </div>
+        <p class="proj-group__note">练习代码、历史备份和素材堆放处。不一定有用，但也没打算删。</p>
+
+        <div class="card-grid">
+          <a class="card reveal" href="https://github.com/fsloper-lijin/python_practice" target="_blank" rel="noopener">
+            <h3 class="card__title">python_practice</h3>
+            <p class="card__desc">
+              零散脚本的集合：计算器、MV 下载、彩票数据处理、股票数据导出 Excel、国旗绘制。
+              写到哪算哪，用得上就留着。
+            </p>
+            <div class="card__foot">
+              <span class="card__foot-left"><i class="lang-dot" style="background:#3572A5"></i>Python · 61 KB</span>
+              <span class="card__year">2025</span>
+            </div>
+          </a>
+
+          <a class="card reveal" href="https://github.com/fsloper-lijin/python_test" target="_blank" rel="noopener">
+            <h3 class="card__title">python_test</h3>
+            <p class="card__desc">
+              更早期的练习：猜数字游戏与几个小实验。学 Python 时留下的第一批量代码。
+            </p>
+            <div class="card__foot">
+              <span class="card__foot-left"><i class="lang-dot" style="background:#3572A5"></i>Python · 6 KB</span>
+              <span class="card__year">2024</span>
+            </div>
+          </a>
+
+          <a class="card reveal" href="https://github.com/fsloper-lijin/stiei-Xiao-AI-Curriculum-source-code" target="_blank" rel="noopener">
+            <h3 class="card__title">stiei-Xiao-AI-Curriculum-source-code</h3>
+            <p class="card__desc">
+              小爱课表的课程表解析与适配源码，附带开发文档。为母校做的适配，
+              后来非本校的同学也做了移植。
+            </p>
+            <div class="card__foot">
+              <span class="card__foot-left"><i class="lang-dot" style="background:#f1e05a"></i>JavaScript · 7 KB</span>
+              <span class="card__year">2024</span>
+            </div>
+          </a>
+
+          <a class="card card--archived reveal" href="https://github.com/fsloper-lijin/litiaotiao_package_backup" target="_blank" rel="noopener">
+            <h3 class="card__title">litiaotiao_package_backup</h3>
+            <p class="card__desc">
+              李跳跳历史版本 APK 的备份存档，附带自定义规则说明页。
+              纯粹是怕哪天需要回退到某个版本时找不到。
+            </p>
+            <div class="card__foot">
+              <span class="card__foot-left"><i class="lang-dot" style="background:#e34c26"></i>HTML · 27 KB</span>
+              <span class="card__year">2023</span>
+            </div>
+          </a>
+
+          <a class="card card--archived reveal" href="https://github.com/fsloper-lijin/map_depot" target="_blank" rel="noopener">
+            <h3 class="card__title">map_depot</h3>
+            <p class="card__desc">
+              图片素材堆放处，50 多张截图与设计稿，没有代码。留着当参考素材。
+            </p>
+            <div class="card__foot">
+              <span class="card__foot-left"><i class="lang-dot" style="background:#8b8b93"></i>素材 · 8 MB</span>
+              <span class="card__year">2023</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div style="margin-top:56px;padding-top:24px;border-top:1px solid var(--border);display:flex;gap:12px;flex-wrap:wrap;align-items:center;">
+        <a href="https://github.com/fsloper-lijin?tab=repositories" target="_blank" rel="noopener" class="btn btn--primary">全部仓库 →</a>
+        <a href="about.html" class="btn btn--ghost">关于我</a>
+        <span style="font-size:0.8rem;color:var(--text-faint);">较早的项目仍在旧账号，已全部迁移过来。</span>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap wrap--wide">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="nav__brand">
+          <span class="nav__dot"></span>
+          李晋
+        </a>
+        <p>记录技术、阅读与思考。更新频率随缘，质量随心情。</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/fsloper-lijin" target="_blank" rel="noopener">GitHub</a>
+        <a href="mailto:2310984793@qq.com">Email</a>
+        <a href="feed.xml" type="application/rss+xml">RSS</a>
+        <a href="index.html">首页</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> 李晋</span>
+      <span>Powered by plain HTML · Hosted on GitHub Pages</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
