@@ -516,6 +516,77 @@ html[data-theme="dark"] .icon-moon { display: none; }
   border-radius: 4px;
 }
 
+/* ---------- 10b. 项目页分组 ---------- */
+.proj-group {
+  margin-bottom: 52px;
+}
+
+.proj-group:last-of-type {
+  margin-bottom: 0;
+}
+
+.proj-group__head {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.proj-group__title {
+  font-family: var(--font-serif);
+  font-size: 1.12rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+.proj-group__count {
+  font-size: 0.76rem;
+  color: var(--text-faint);
+  font-variant-numeric: tabular-nums;
+}
+
+.proj-group__note {
+  font-size: 0.82rem;
+  color: var(--text-faint);
+  margin: -10px 0 18px;
+  line-height: 1.6;
+}
+
+/* 项目卡片：底部元信息栏 */
+.card__foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+  font-size: 0.74rem;
+  color: var(--text-faint);
+}
+
+.card__foot-left {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.card__year {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: .02em;
+}
+
+.card--archived {
+  opacity: 0.82;
+}
+
+.card--archived:hover {
+  opacity: 1;
+}
+
 /* ---------- 11. 页脚 ---------- */
 .site-footer {
   border-top: 1px solid var(--border);
